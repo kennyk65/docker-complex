@@ -16,9 +16,9 @@ after_success:
   # Log into DockerHub
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Push
-  - docker push -t kennyk65/multi-client
-  - docker push -t kennyk65/multi-server
-  - docker push -t kennyk65/multi-worker
-  - docker push -t kennyk65/multi-nginx
+  - docker push kennyk65/multi-client
+  - docker push kennyk65/multi-server
+  - docker push kennyk65/multi-worker
+  - docker push kennyk65/multi-nginx
   
 
